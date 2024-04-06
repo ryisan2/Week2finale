@@ -8,6 +8,11 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+
+    padding: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -16,21 +21,22 @@ h5,
 h6,
 span {
 
-flood-color: cyan;
+    flood-color: cyan;
 
 }
+
 .words {
     font-size: 60px;
 }
 
 .morewords {
-font-size: 20px;
-color: cadetblue;
+    font-size: 20px;
+    color: cadetblue;
 }
 
 .enhance {
     flood-color: deeppink;
-    
+
 }
 
 /*---------------------------GENERAL TAGS-------------------------------------------*/
@@ -44,15 +50,19 @@ color: cadetblue;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .nav {
     font-size: 20px;
     display: flex;
-    align-items: center; /* Vertically center the logo and links */
-    justify-content: space-between; /* Space out the logo and links */
+    align-items: center;
+    /* Vertically center the logo and links */
+    justify-content: space-around;
+    /* Space out the logo and links */
 }
 
 .logo {
-    max-width: 200px; /* Adjust the logo width as needed */
+    max-width: 200px;
+    /* Adjust the logo width as needed */
 }
 
 .list {
@@ -60,87 +70,106 @@ color: cadetblue;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Vertically center the navigation links */
+    align-items: center;
+    /* Vertically center the navigation links */
     text-decoration: none;
 }
 
 .list li {
-    margin-right: 20px; /* Add spacing between navigation links */
+    margin-right: 20px;
+    /* Add spacing between navigation links */
 }
 
 .button {
-    padding: 10px 20px;
     font-size: 20px;
     background-color: aqua;
-    border-radius: 40%;
+    border-radius: 50px;
+    height: 40px;
+    padding: 10px;
+    padding-bottom: 20px;
     /* Other button styles */
-    
-    /*---------------------------NAV AREA-------------------------------------------*/
+}
+
+
+/*---------------------------NAV AREA-------------------------------------------*/
 
 
 
 
 
-    /*---------------------------INTRO AREA-------------------------------------------*/
-
-    
-    .girl {
-        height: 100px;
-        width: 50%;
-        max-width: 100%; /* Ensure the image doesn't exceed its container */
-    }
-    
-    .row2 {
-        width: 100%; /* Adjust as needed */
-        max-width: 1200px;
-        margin: 0 auto;
-     
-    }
-    
-    .introduction {
-        
-        background-color: #f5f5f5;
-        padding: 20px;
-        border-radius: 50px;
-        margin-left: 20px; /* Add spacing between image and content */
-    }
-
-    .girly {
-        width: 50%;
-    }
-    
-    .words {
-        font-size: 24px; /* Adjust font size as needed */
-    }
-    
-    .enhance {
-        font-weight: bold; /* Make the enhanced text bold */
-    }
-    
-    .yourinput {
-        height: 200px;
-        max-width: 300px;
-        padding: 15px;
-        border: none;
-        border-radius: 50px;
-        margin-top: 10px; /* Add spacing between input and button */
-    }
-    
-    .button2 {
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: rgb(246, 164, 231);
-        border: none;
-        border-radius: 40px;
-        color: white;
-        cursor: pointer;
-        /* Other button styles */
-    }
 /*---------------------------INTRO AREA-------------------------------------------*/
+.intro {
 
-
-
-
-
+    display: flex;
 
 }
+
+.secondrow {
+
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin: 20px;
+    padding-right: 40px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+.girly {
+    height: 200px;
+    max-width: 300px;
+    width: 50%;
+    padding: 0 200px;
+}
+
+.customers {
+    height: 200px;
+    width: 50%;
+    max-width: 600px;
+}
+
+.yourinput {
+    flex-grow: 2;
+    height: 50px;
+    max-width: 2000px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+yourinput:focus {
+
+    outline: none
+}
+
+.forma:focus-within {
+
+    outline: 1px solid rgb(183, 216, 227)
+}
+
+
+.button2 {
+    position: absolute;
+    background-color: aqua;
+    border-radius: 10%;
+    height: 50px;
+    width: 100%;
+
+}
+
+.forma {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid grey;
+    /* Set the border on the form */
+    padding: 1px;
+    /* Add padding for visual clarity */
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+/*---------------------------INTRO AREA-------------------------------------------*/
