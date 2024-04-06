@@ -29,7 +29,7 @@ color: cadetblue;
 }
 
 .enhance {
-    flood-color: deeppinkß;
+    flood-color: deeppink;
     
 }
 
@@ -83,13 +83,9 @@ color: cadetblue;
 
     /*---------------------------INTRO AREA-------------------------------------------*/
 
-    .intro {
-        display: flex;
-        align-items: center; /* Vertically center the content */
-        padding: 30px;
-    }
     
     .girl {
+        height: 100px;
         width: 50%;
         max-width: 100%; /* Ensure the image doesn't exceed its container */
     }
@@ -98,18 +94,19 @@ color: cadetblue;
         width: 100%; /* Adjust as needed */
         max-width: 1200px;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
+     
     }
     
     .introduction {
-        flex-grow: 1; /* Expand to fill available space */
-        display: flex;
-        flex-direction: column;
+        
         background-color: #f5f5f5;
         padding: 20px;
         border-radius: 50px;
         margin-left: 20px; /* Add spacing between image and content */
+    }
+
+    .girly {
+        width: 50%;
     }
     
     .words {
