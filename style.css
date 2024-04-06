@@ -92,7 +92,6 @@ color: cadetblue;
     .girl {
         width: 50%;
         max-width: 100%; /* Ensure the image doesn't exceed its container */
-        margin-right: 20px; /* Add spacing between image and content */
     }
     
     .row2 {
@@ -110,6 +109,7 @@ color: cadetblue;
         background-color: #f5f5f5;
         padding: 20px;
         border-radius: 50px;
+        margin-left: 20px; /* Add spacing between image and content */
     }
     
     .words {
@@ -121,18 +121,20 @@ color: cadetblue;
     }
     
     .yourinput {
+        height: 200px;
+        max-width: 300px;
         padding: 15px;
         border: none;
         border-radius: 50px;
         margin-top: 10px; /* Add spacing between input and button */
     }
     
-    .button {
+    .button2 {
         padding: 10px 20px;
         font-size: 16px;
-        background-color: aqua;
+        background-color: rgb(246, 164, 231);
         border: none;
-        border-radius: 50px;
+        border-radius: 40px;
         color: white;
         cursor: pointer;
         /* Other button styles */
