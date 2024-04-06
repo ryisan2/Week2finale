@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+
+flood-color: cyan;
+
+}
+.words {
+    font-size: 40px;
+}
+
+.enhance {
+    flood-color: deeppinkß;
+
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Vertically center the logo and links */
+    justify-content: space-between; /* Space out the logo and links */
+}
+
+.logo {
+    max-width: 200px; /* Adjust the logo width as needed */
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Vertically center the navigation links */
+    text-decoration: none;
+}
+
+.list li {
+    margin-right: 20px; /* Add spacing between navigation links */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: aqua;
+    border-radius: 40%;
+    /* Other button styles */
+}
