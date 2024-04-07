@@ -151,7 +151,7 @@ span {
 
 /*---------------------------INTRO AREA-------------------------------------------*/
 .intro {
-
+display: flex;
 }
 
 .secondrow {
@@ -251,7 +251,6 @@ span {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1000px;
-    gap: 20px; /* Adjust the space between items as needed */
 }
 
 .list-item {
@@ -263,8 +262,8 @@ span {
 }
 
 .list-item img {
-    width: 50px; 
-    height: 50px; 
+    width: 100px; 
+    height: 300px; 
     margin-right: 10px; /* Adds some space between the image and the text */
 }
 
@@ -272,6 +271,11 @@ span {
     font-size: 20px; /* Adjusted for better readability */
     margin: 0 0 5px 0; /* Adjusted to add some space below the title */
     color: #007BFF; /* Example color for the highlighted title */
+}
+
+.subtitle{
+    font-size: 30px;
+    color:crimson;
 }
 
 .texta {
@@ -283,14 +287,36 @@ span {
 
 
 
+.letsgo {
+    margin-top: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
 
+.featurecontainer {
 
+    display: flex;
+}
+
+.Service {
+
+    font-size: 60px;
+    color: blue;
+}
+
+.explanation {
+    font-family:roboto;
+    font-size: 20px;
+    color: cyan;
+}
 
 
 
 /* ----------------------------------------SERVICES AREA ---------------------------------------------*/
 
-/*---------------- Responsiveness----------------------*/
+/*-------------------------------------- Responsiveness----------------------*/
 /* Hide the checkbox */
 /* Style adjustments for mobile */
 
@@ -314,7 +340,6 @@ list-container {
 }
 }
     
-}
 
 
 @media (max-width: 550px) {
