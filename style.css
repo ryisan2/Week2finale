@@ -275,7 +275,7 @@ display: flex;
 }
 
 .subtitle{
-    font-size: 40px;
+    font-size: 25px;
     color:crimson;
 }
 
@@ -304,7 +304,7 @@ flex-direction: column;
 
 .Service {
 
-    font-size: 60px;
+    font-size: 80px;
     color: blue;
 }
 
@@ -312,6 +312,7 @@ flex-direction: column;
     font-family:roboto;
     font-size: 20px;
     color: cyan;
+    font-weight: 800;
 }
 
 .iconic {
