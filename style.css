@@ -9,7 +9,8 @@ html {
 }
 
 a {
-
+    text-decoration: none;
+    position: relative;
     padding: 10px;
 }
 
@@ -48,17 +49,17 @@ span {
 
 .row {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+   
 }
 
 .nav {
     font-size: 20px;
     display: flex;
-    /* Vertically center the logo and links */
-    justify-content: space-between;
-    /* Space out the logo and links */
+   justify-content: space-around;
+
 }
+
+
 
 .logo {
     max-width: 200px;
@@ -81,15 +82,66 @@ span {
 }
 
 .button {
-    font-size: 20px;
+    font-size: 30px;
     background-color: aqua;
     border-radius: 50px;
     height: 40px;
-    padding: 10px;
-    padding-bottom: 20px;
     /* Other button styles */
 }
 
+
+.nav__link {
+    font-size: 30px;
+
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(227, 240, 240) 300ms;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+
+.nav__link2{
+
+    text-decoration: none;
+}
+
+.nav__link:hover {
+
+    color: deeppink;
+    cursor: pointer;
+}
+
+.nav__link:hover::before {
+
+    text-decoration: none;
+    opacity: 0;
+}
+
+.nav__link:after {
+
+    content: "";
+  position: absolute;
+  height: 3px;
+  background-color: rgb(234, 97, 179);
+  width: 0;
+  bottom: -3px;
+  right: 0;
+  transition: all 300ms ease;
+    
+}
+.nav__link:hover::after {
+    width: 100%;
+    left: 0;
+    text-decoration: underline;
+}
+
+.nav__link-white:after {
+    background-color: black;
+  }
+
+  .nav__link-black:after {
+    background-color: white;
+  }
 
 /*---------------------------NAV AREA-------------------------------------------*/
 
@@ -104,27 +156,27 @@ span {
 }
 
 .secondrow {
-
+    
     display: flex;
-    align-content: center;
-    justify-content: space-around;
-    margin: 300px;
+    justify-content: space-between;
+    margin: 0 900px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .introduction {
     display: flex;
     flex-direction: column;
     width: 100%;
-    position: relative;
-    max-width: 1200px;
     margin: 10px;
-    margin-left: 300px;
+    justify-content:space-between;
+    padding:0 70px;
 }
 
 .girly {
     height: 100px;
     max-width: 300px;
-    width: 50%;
+    width: 100%;
     padding: 0 200px;
 }
 
@@ -146,7 +198,7 @@ span {
 }
 .forma {
     
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     
 }
 .yourinput:focus {
@@ -156,8 +208,9 @@ span {
 
 .girl {
 
-    height: 1000px;
-    margin-top: 50px;
+    height: 900px;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .forma {
@@ -185,9 +238,9 @@ span {
 
 .logostrip {
 
-    height: 50px;
+    height: 40px;
     width: 100%;
-    max-width: 100px;
+    max-width: 600px;
 }
 
 
