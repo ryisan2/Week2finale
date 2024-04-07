@@ -239,17 +239,17 @@ span {
 
 
 /* ----------------------------------------SERVICES AREA ---------------------------------------------*/
-
-.listy {
+.services {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .list-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     max-width: 1000px;
     gap: 20px; /* Adjust the space between items as needed */
 }
@@ -263,27 +263,23 @@ span {
 }
 
 .list-item img {
-    width: 50px; /* Adjust based on your needs */
-    height: 50px; /* Adjust based on your needs */
+    width: 50px; 
+    height: 50px; 
     margin-right: 10px; /* Adds some space between the image and the text */
 }
 
 .item-title {
-    font-size: 30px;
-    margin: 0;
+    font-size: 20px; /* Adjusted for better readability */
+    margin: 0 0 5px 0; /* Adjusted to add some space below the title */
     color: #007BFF; /* Example color for the highlighted title */
 }
 
-.list-item div {
-    flex-grow: 1;
-}
 .texta {
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Adjusted for better readability */
+    font-weight: 400; /* Adjusted for normal font weight */
     opacity: 0.7;
 }
-
 
 
 
@@ -309,6 +305,14 @@ span {
     margin-left: 360px;
 }
 
+list-container {
+    justify-content: center;
+}
+
+.list-item {
+    width: calc(50% - 20px); /* Adjust for smaller screens */
+}
+}
     
 }
 
@@ -378,5 +382,8 @@ span {
     /* Display the menu when checkbox is checked */
     .nav-toggle:checked + .nav-toggle-label + .list {
         display: block;
+    }
+    .list-item {
+        width: 100%; /* Full width on very small screens */
     }
 }
