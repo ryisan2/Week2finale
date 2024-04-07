@@ -262,8 +262,8 @@ display: flex;
 }
 
 .list-item img {
-    width: 100px; 
-    height: 300px; 
+    width: 500px; 
+    height: 50px; 
     margin-right: 10px; /* Adds some space between the image and the text */
 }
 
@@ -271,33 +271,26 @@ display: flex;
     font-size: 20px; /* Adjusted for better readability */
     margin: 0 0 5px 0; /* Adjusted to add some space below the title */
     color: #007BFF; /* Example color for the highlighted title */
+    display: flex;
 }
 
 .subtitle{
-    font-size: 30px;
+    font-size: 40px;
     color:crimson;
 }
 
 .texta {
     font-family: 'Roboto', sans-serif;
     font-size: 16px; /* Adjusted for better readability */
-    font-weight: 400; /* Adjusted for normal font weight */
+    font-weight: 800; /* Adjusted for normal font weight */
     opacity: 0.7;
 }
 
 
-
-.letsgo {
-    margin-top: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    
-}
-
-.featurecontainer {
-
-    display: flex;
+.hello {
+  
+display: flex;
+justify-content: space-between;
 }
 
 .Service {
@@ -312,103 +305,12 @@ display: flex;
     color: cyan;
 }
 
+.iconic {
+
+    height:20px;
+    width: 20px;
+}
 
 
 /* ----------------------------------------SERVICES AREA ---------------------------------------------*/
 
-/*-------------------------------------- Responsiveness----------------------*/
-/* Hide the checkbox */
-/* Style adjustments for mobile */
-
-@media(max-width: 768px){
-
-    .morewords{
-        font-size: 20px;
-    }
-
-.button2{
-
-    margin-left: 360px;
-}
-
-list-container {
-    justify-content: center;
-}
-
-.list-item {
-    width: calc(50% - 20px); /* Adjust for smaller screens */
-}
-}
-    
-
-
-@media (max-width: 550px) {
-    .nav-toggle-label {
-        display: block; /* Show burger icon */
-    }
-.nav-toggle {
-    display: none;
-}
-
-/* Style the label as a burger icon */
-/* Style the label as a burger icon */
-.nav-toggle-label {
-    display: none; /* Initially hidden */
-    position: absolute;
-    top: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-    cursor: pointer;
-    height: 25px; /* Height of the burger icon */
-    width: 30px; /* Width of the burger icon */
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background-color: #333;
-    transition: all 0.3s ease-in-out;
-}
-
-.nav-toggle-label span {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    content: '';
-    top: -8px;
-}
-
-.nav-toggle-label span::after {
-    top: 8px;
-}
-
-
-    .list {
-        display: none; /* Hide menu initially */
-        position: absolute;
-        right: 0;
-        top: 60px; /* Adjust based on the height of your nav */
-        width: 100%; /* Full width */
-        background: white; /* Background color */
-        text-align: center; /* Center the links */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
-    }
-
-    .list li {
-        display: block; /* Stack the links vertically */
-    }
-
-    /* Display the menu when checkbox is checked */
-    .nav-toggle:checked + .nav-toggle-label + .list {
-        display: block;
-    }
-    .list-item {
-        width: 100%; /* Full width on very small screens */
-    }
-}
