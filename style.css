@@ -228,6 +228,7 @@ span {
     align-content: center;
     font-family: Roboto;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .logostrip {
@@ -252,7 +253,7 @@ span {
 
 .features-visible {
     opacity: 1;
-    transform: translateX(0) ;
+    transform: translateX(0);
 }
 
 
@@ -267,8 +268,9 @@ span {
 
 .services-visible {
     opacity: 1;
-    transform: translateX(0) ;
+    transform: translateX(0);
 }
+
 .list-container {
     display: flex;
     flex-wrap: wrap;
@@ -428,13 +430,13 @@ span {
 
 .fifthrow-visible {
     opacity: 1;
-    transform: translateX(0) ;
+    transform: translateX(0);
 }
 
 .showtime {
     margin-top: 100px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 .laptop {
@@ -460,7 +462,7 @@ span {
 
 .outline {
     display: flex;
-    
+
 }
 
 .enhance2 {
@@ -469,4 +471,57 @@ span {
     font-size: 30px;
 }
 
-/* ----------------------------------------EASY TO START AREA ---------------------------------------------*/
+/* ----------------------------------------PRINCIPLES AREA ---------------------------------------------*/
+
+.values {
+    max-width: 1200px;
+}
+
+.sixthrow {
+    display: flex;
+    margin-top: 300px;
+}
+
+.wireframe {
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+}
+
+.wireframe-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.texta2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+.wireframe {
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.framewire {
+
+    height: 700px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.moneyicon {
+
+height: 50px;
+width: 50px;
+
+}
+.double {
+    display: flex;
+}
+
+/* ----------------------------------------PRINCIPLES AREA ---------------------------------------------*/

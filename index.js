@@ -60,3 +60,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', (event) => {
+    const wireframe= document.querySelector('.wireframe',);
+    const windowHeight = window.innerHeight;
+
+    window.addEventListener('scroll', () => {
+        // Get the position of the .wireframe section
+        const scrollY = window.scrollY || window.pageYOffset;
+        const wireframeTop = wireframe.getBoundingClientRect().top + scrollY;
+        
+        // Check if the .wireframe section has scrolled into view
+        if (scrollY + windowHeight > wireframeTop) {
+            wireframe.classList.add('wireframe-visible');
+        }
+    });
+});
