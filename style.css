@@ -299,9 +299,10 @@ main {
 
 
 .customers {
-    height: 50px;
+    height: 40px;
     width: 100%;
     max-width: 600px;
+    opacity: .5;
 }
 
 .yourinput {
@@ -521,7 +522,7 @@ p {
 
 .imagery {
     margin-top: 60px;
-    height: 350px;
+    height: 400px;
     max-width: 600px;
     border: 1px solid;
     margin-left: 70px;
