@@ -77,7 +77,7 @@ main {
     overflow-x: hidden;
 }
 
-.worda{
+.worda {
     display: flex;
     flex-direction: column;
 }
@@ -492,6 +492,11 @@ p {
 
 /* ------------------------------------------------ QUALITY---------------------------------------------------*/
 
+#quality {
+
+    margin-bottom: 150px;
+}
+
 .bigletters {
 
     font-size: 48px;
@@ -507,6 +512,7 @@ p {
 }
 
 .information {
+    max-width: 1200px;
     margin-top: 80px;
     width: 50%;
     margin-right: 10px;
@@ -516,7 +522,7 @@ p {
     display: flex;
     align-content: center;
     width: 50%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -557,83 +563,70 @@ p {
 /* ----------------------------------------EASY TO START AREA ---------------------------------------------*/
 
 /* Steps Section */
-.easy {
+
+.surprise {
     display: flex;
-    padding: 96px 0;
 }
 
 .fifthrow {
+   width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    /* Align items vertically */
 }
 
-.steps-img-wrapper {
+.laptop {
+
+    height: 350px;
     width: 50%;
-    max-width: 640px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Center the image within the figure */
+    max-width: 600px;
+    margin-right: 50px;
 }
 
-.steps-description {
-    flex: 1;
+.showtime {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.steps {
     width: 50%;
-    max-width: 576px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 64px;
-}
-
-.steps-title,
-.steps-subtitle {
-    text-align: left;
-    letter-spacing: 1.5px;
-}
-
-.steps-title {
-    font-size: 16px;
-    margin-bottom: 16px;
-}
-
-.steps-subtitle {
-    font-size: 20px;
-    /* Adjusted for consistency */
-    font-weight: 600;
-    color: #243e63;
-    margin-bottom: 16px;
-}
-
-.steps-list {
     display: flex;
     flex-direction: column;
 }
 
-.steps-item {
+.listpiece {
     display: flex;
-    align-items: flex-start;
-    margin-top: 32px;
+    margin-bottom: 20px;
 }
 
-.steps-number {
-    font-size: 36px;
-    font-weight: 600;
-    color: #cbd5e0;
-    margin-right: 24px;
-    /* Space between number and description */
+.doit {
+    display: flex;
+    flex-direction: column;
 }
 
-.steps-detail {
-    margin-left: 24px;
-    /* Adjust if more space is needed */
+.numero {
+
+    font-size: 35px;
+    font-weight: 700;
+    opacity: .3;
+    padding-right: 20px;
 }
 
-.steps-para {
-    font-size: 14px;
-    text-align: left;
-    color: #718096;
-    line-height: 28px;
+.stepa {
+    font-size: 18px;
+    font-weight: 800;
+    color: #566881;
+}
+
+.easyp {
+    color: #566881;
+    max-width: 350px;
+}
+
+.easylist {
+
+    margin-top: 40px;
 }
 
 /* ----------------------------------------PRINCIPLES AREA ---------------------------------------------*/
