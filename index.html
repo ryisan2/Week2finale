@@ -4,210 +4,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TREACT PROJECT</title>
+    <title>WEEK2 FINAL PROJECT</title>
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <div class="top">
-        <div class="row">
-            <div class="nav">
-                <a class="nav__logo--wrapper" href="#">
-                    <img class="logo" src="./assets/T box logo.svg" alt="">
-                    <h2 class="nav__title">Treact</h2>
-                  </a>                <ul class="list">
-                    <li><a href="#about" class="nav__link">About</a></li>
-                    <li><a href="#blog" class="nav__link">Blog</a></li>
-                    <li> <a href="#price" class="nav__link">Pricing</a></li>
-                    <li><a href="#contact" class="nav__link">Contact</a></li>
-                    <li><a href="#login" class="nav__link">Login</a></li>
-                    <li>
-                        <button class="button">
-                            <a href="#signup" class="nav__link2">Signup</a>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <main>
+        <section id="landing">
+            <nav>
+                <div class="nav-container">
+                    <a href="#" class="logo-container">
+                        <img src="./assets/logo.svg" alt="Treact Logo" class="logo">
+                        <h2>Treact</h2>
+                    </a>
+                    <ul class="links">
+                        <li><a href="#" class="link">About</a></li>
+                        <li><a href="#" class="link">Blog</a></li>
+                        <li><a href="#pricing" class="link">Pricing</a></li>
+                        <li><a href="#footer" class="link">Contact Us</a></li>
+                        <li class="login"><a href="" class="link">Login</a></li>
+                        <li><a href="" class="info__button2">Sign Up</a></li>
+                    </ul>
 
-    <!-----------------------------Top image area----------------------------->
+                    <!--------------------------BUURGER MENU TIME --------------------------------------->
+
+                    <nav>
+                        <div class="nav-container">
+                            <button class="menu-btn" onclick="openMenu()" title="Open Menu">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="menu-backdrop">
+                                <button class="menu-btn close" onclick="closeMenu()" title="Close Menu">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                <ul class="menu-links">
+                                    <li><a href="#" class="link" onclick="closeMenu()">About</a></li>
+                                    <li><a href="#" class="link" onclick="closeMenu()">Blog</a></li>
+                                    <li><a href="#pricing" class="link" onclick="closeMenu()">Pricing</a></li>
+                                    <li><a href="#footer" class="link" onclick="closeMenu()">Contact Us</a></li>
+                                    <li><a href="#" class="link" onclick="closeMenu()">Login</a></li>
+                                    <li><a href="#" class="info__button2" onclick="closeMenu()">Sign Up</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+        </section>
+    </main>
+
+    <!-------------------------------------------MAIN INTRO AREA------------------------------------------->
     <section class="intro">
         <div class="secondrow">
             <div class="introduction">
-                <h1 class="words">Beautiful React 
-                    Templates <span class="enhance">for you!</span></h1>
-                    <div class="more">
-                        <p class="morewords"> Our Templates are easy to setup,<br> understand and customize. <br>
-                            Fully modular components with a rariety of <br> pages and components
-                        </p>
+                <h1 class="words">Beautiful React Templates <span class="purple">for you!</span></h1>
+                <div class="more">
+                    <p class="morewords"> Our Templates are easy to setup,<br> understand and customize. <br>
+                        Fully modular components with a rariety of <br> pages and components
+                    </p>
+                    <div class="yourinput">
+                        <input class="userinfo" type="email" placeholder="Please Insert Email Address" />
+                        <button class="info__button info__button__hover">Get Started</button>
                     </div>
-                &nbsp;
-                <form action="mailto:ryisan@suprasia.xyz" class="forma">
-                    <input type="text" placeholder="     Enter your email" class="yourinput" /> <button
-                        class="button2">Get
-                        Started</button>
-                </form>
-
-                &nbsp;
-                &nbsp;
-                &nbsp;
-
-                <div class="Trusted">
-                    <h1>Our Trusted Customers</h1>
-                    <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="customers" class="logostrip">
+                    <div class="customers--wrapper">
+                        <p class="hcustomers--title">OUR TRUSTED CUSTOMERS</p>
+                        <img class="customers" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="designergirl">
-                <img src="./assets/DesingerA.svg" alt="a girl designing" class="girl">
+            <figure class="header__img">
+                <img class="girly" src="./assets/DesingerA.svg" alt="">
+            </figure>
+        </div>
+        </header>
+    </section>
+    <!-------------------------------------------MAIN INTRO AREA------------------------------------------->
+
+
+    <!----------------------------------------------SERVICES SECTION------------------------------------------------->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="description">
+                    <h5 class="title"><span class="highlight">FEATURES</span></h5>
+                    <h2 class="subtitle">We have Amazing <span class="highlight">Service.</span></h2>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <figure class="image">
+                            <img src="./assets/shield pic.svg" alt="shield">
+                        </figure>
+                        <div class="service-details">
+                            <h2>Secure</h2>
+                            <p class="worda">We strictly only deal with vendors that provide top notch security.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <figure class="image">
+                            <img src="https://treact.owaiskhan.me/static/media/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                                alt="support">
+                        </figure>
+                        <div class="service-details">
+                            <h2>24/7 Support</h2>
+                            <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <figure class="image">
+                            <img src="https://treact.owaiskhan.me/static/media/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+                                alt="customize">
+                        </figure>
+                        <div class="service-details">
+                            <h2>Customizable</h2>
+                            <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <figure class="image">
+                            <img src="https://treact.owaiskhan.me/static/media/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+                                alt="reliable">
+                        </figure>
+                        <div class="service-details">
+                            <h2>Reliable</h2>
+                            <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <figure class="image">
+                            <img src="https://treact.owaiskhan.me/static/media/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+                                alt="fast">
+                        </figure>
+                        <div class="service-details">
+                            <h2>Fast</h2>
+                            <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <figure class="image">
+                            <img src="https://treact.owaiskhan.me/static/media/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+                                alt="easy">
+                        </figure>
+                        <div class="service-details">
+                            <h2>Easy</h2>
+                            <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-</body>
 
-<!----------------------------------------------SERVICES SECTION------------------------------------------------->
-<section class="features">
-    <div class="letsgo">
-        <div class="feature"></div>
-        <h5 class="subtitle">Features</h5>
-        <h12 class="Service">We have amazing <span class="empahsizeservice">service</span></h2>
-            <p class="explanation"> The services we offer are second to none, We <br>
-                give you the very best in react templates that you can use to succeeed</p>
-            <div>
 
+    <!----------------------------------------------SERVICES SECTION------------------------------------------------->
+
+
+
+
+
+    <!----------------------------------------------Quality SECTION------------------------------------------------->
+
+    <section id="quality">
+        <div class="fourthrow">
+            <div class="information">
+                <h5 class="highlight2"> Quality Work</h5>
+                <h1 class="bigletters"> Designed & Developed by <span class="purple">Professionals</span></h1>
+                <p class="small__letters">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam accusamus repudiandae
+                    delectus incidunt dolores. Vitae, enim facilis! Esse deleniti, accusamus eius illo velit architecto
+                    neque vitae quasi nam fugiat?</p>
+                 <br>
+                    <button class="info__button2">Learn More </button>
             </div>
-    </div>
-    </div>
-</section>
-
-<section class="services">   
-     <div class="list-container">
-        <div class="iconic-container">
-            <img src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" class="iconic" alt="Secure">
-        </div>
-        <div class="description">
-            <h3 class="texta"><span class="enhance2">Secure</span></h3>
-            <p class="texta">We only deal with <br> vendors that <br> provide top-notch <br> security.</p>
-        </div>
-   
-    </div>
-</section>
-
-
-<!----------------------------------------------SERVICES SECTION------------------------------------------------->
-
-
-
-
-
-<!----------------------------------------------Quality SECTION------------------------------------------------->
-<Section class="quality">
-    <div class="fourthrow">
-        <div class="pros">
-            <h3 class="work">Quality Work</h3>
-            <br>
-            <h1 class="headings"> Designed & Developed by <br> <span class="enhance">Professionals</span></h1>
-            <br>
-            <p class="thebest"> We work with the very best professionals to bring you <br> the best service and the best
-                platform to perform all you <br> need in the most efficient way <br>possible</p>
-            <button class="button">Learn More</button>
-        </div>
-        <div class="website">
-            <img src="./assets/website.jpeg" class="webimage">
+            <figure class="figura">
+                <img src="./assets/2nd page img.png" class="imagery" alt="">
+            </figure>
         </div>
 
+    </section>
 
-
-    </div>
-</Section>
-
-<!----------------------------------------------Quality SECTION------------------------------------------------->
+    <!----------------------------------------------Quality SECTION------------------------------------------------->
 
 
 
-<!----------------------------------------------EASY TO GET STARTED SECTION------------------------------------------------->
+    <!----------------------------------------------EASY TO GET STARTED SECTION------------------------------------------------->
 
-<section class="easy">
-    <div class="fifthrow">
-        <div class="showtime">
-            <img src="./assets/laptop.png" class="laptop" alt="">
-            <div class="steps">
-                <h3 class="stepa"> Steps </h3>
-                <h1 class="headings">Easy To Get Started</h1>
-                <div class="outline">
-                    <h3 class="numba">01 <br></h3>
-                    <h3 class="texta"><span class="enhance2">Register</span> <br> <br> Create an account with us using
-                        <br>
-                        Google or Facebook
-                    </h3>
+    <section class="easy">
+        <div class="fifthrow">
+            <div class="showtime">
+                <img src="./assets/laptop.png" class="laptop" alt="">
+                <div class="steps">
+                    <h3 class="stepa"> Steps </h3>
+                    <h1 class="headings">Easy To Get Started</h1>
+                    <div class="outline">
+                        <h3 class="numba">01 <br></h3>
+                        <h3 class="texta"><span class="enhance2">Register</span> <br> <br> Create an account
+                            with us using
+                            <br>
+                            Google or Facebook
+                        </h3>
 
-                </div>
-                <div class="outline">
-                    <h3 class="numba">02 <br></h3>
-                    <h3 class="texta"><span class="enhance2">Download</span> <br> <br> Create an account with us using
-                        <br>
-                        Google or Facebook
-                    </h3>
+                    </div>
+                    <div class="outline">
+                        <h3 class="numba">02 <br></h3>
+                        <h3 class="texta"><span class="enhance2">Download</span> <br> <br> Create an account
+                            with us using
+                            <br>
+                            Google or Facebook
+                        </h3>
 
-                </div>
-                <div class="outline">
-                    <h3 class="numba">03 <br></h3>
-                    <h3 class="texta"><span class="enhance2">Run</span> <br> <br> Create an account with us using <br>
-                        Google or Facebook</h3>
+                    </div>
+                    <div class="outline">
+                        <h3 class="numba">03 <br></h3>
+                        <h3 class="texta"><span class="enhance2">Run</span> <br> <br> Create an account with us
+                            using <br>
+                            Google or Facebook</h3>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-
-
-
-</section>
-
-<!----------------------------------------------EASY TO GET STARTED SECTION------------------------------------------------->
-
-
-
-<!-----------------------------------------------------VALUES  SECTION------------------------------------------------->
-<div class="values">
-    <div class="sixthrow">
-        <div class="wireframe">
-            <h3 class="stepa">Values</h3>
-            <h1 class="headings">We Always Abide By Our <span class="enhance">Principles</span></h1>
-            <p class="texta2">Working by our principles is paramount as we believe our principles drive us. <br>
-                By working with honor and working with our clients honestly we can provide the best <br>
-                in service.</p>
-            <div class="double">
-                <img src="./assets/money icon.png" class="moneyicon" alt=""> <br>
-                <h3 class="texta2">We promise to offer you the best rate we can - at par with the industry standard.
-                </h3>
-                <img src="./assets/briefcase.png" class="moneyicon" alt=""> <br>
-                <h3 class="texta2">We promise to offer you the best rate we can - at par with the industry standard.
-                </h3>
-            </div>
         </div>
-        <div class="wirephoto">
-            <img src="./assets/Wireframe.png" class="framewire" alt="">
-        </div>
-    </div>
 
 
 
+    </section>
 
-
-
-
-
+    <!----------------------------------------------EASY TO GET STARTED SECTION------------------------------------------------->
 
 
 
     <!-----------------------------------------------------VALUES  SECTION------------------------------------------------->
+    <div class="values">
+        <div class="sixthrow">
+            <div class="wireframe">
+                <h3 class="stepa">Values</h3>
+                <h1 class="headings">We Always Abide By Our <span class="enhance">Principles</span></h1>
+                <p class="texta2">Working by our principles is paramount as we believe our principles drive us.
+                    <br>
+                    By working with honor and working with our clients honestly we can provide the best <br>
+                    in service.
+                </p>
+                <div class="double">
+                    <img src="./assets/money icon.png" class="moneyicon" alt=""> <br>
+                    <h3 class="texta2">We promise to offer you the best rate we can - at par with the industry
+                        standard.
+                    </h3>
+                    <img src="./assets/briefcase.png" class="moneyicon" alt=""> <br>
+                    <h3 class="texta2">We promise to offer you the best rate we can - at par with the industry
+                        standard.
+                    </h3>
+                </div>
+            </div>
+            <div class="wirephoto">
+                <img src="./assets/Wireframe.png" class="framewire" alt="">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-----------------------------------------------------VALUES  SECTION------------------------------------------------->
+
+
+
+
+        </main>
+</body>
+
+</html>

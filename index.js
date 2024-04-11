@@ -61,17 +61,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 document.addEventListener('DOMContentLoaded', (event) => {
-    const wireframe= document.querySelector('.wireframe',);
+    const sixthrow= document.querySelector('.sixthrow',);
     const windowHeight = window.innerHeight;
 
     window.addEventListener('scroll', () => {
-        // Get the position of the .wireframe section
+        // Get the position of the .sixthrow section
         const scrollY = window.scrollY || window.pageYOffset;
-        const wireframeTop = wireframe.getBoundingClientRect().top + scrollY;
+        const sixthrowTop = sixthrow.getBoundingClientRect().top + scrollY;
         
-        // Check if the .wireframe section has scrolled into view
-        if (scrollY + windowHeight > wireframeTop) {
-            wireframe.classList.add('wireframe-visible');
+        // Check if the .sixthrow section has scrolled into view
+        if (scrollY + windowHeight > sixthrowTop) {
+            sixthrow.classList.add('sixthrow-visible');
         }
     });
 });
