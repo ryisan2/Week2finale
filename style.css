@@ -23,6 +23,14 @@ h1 {
     color: #1A202C
 }
 
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
 h1 {
     font-size: 36px;
 }
@@ -642,9 +650,8 @@ p {
 
     margin: 0 auto;
     max-width: 1480px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
-
 
 
 .principles {
@@ -914,7 +921,7 @@ p {
 
 .pricing__wrapper {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     margin: 0 auto;
 }
@@ -1134,7 +1141,7 @@ p {
     font-size: 14px;
 }
 
-    info__button5:hover {
+info__button5:hover {
     color: #fff;
     padding: 12px 32px;
     /* Corrected padding */
@@ -1175,6 +1182,7 @@ p {
 
 .pricing__container {
     padding: 96px 0;
+    margin-bottom: 150px;
 }
 
 .pricing__row {
@@ -1438,8 +1446,8 @@ p {
     box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.06);
 }
 
-/*
-  
+
+
 
 
 
@@ -1449,3 +1457,54 @@ p {
 
 
 /* ----------------------------------------PRICING AREA ---------------------------------------------*/
+
+
+
+/* ----------------------------------------CLIENTS AREA ---------------------------------------------*/
+
+.eighthrow {
+    display: flex;
+}
+
+.balloon {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.clients__box {
+    padding: 96px;
+}
+
+.test__subs {
+
+    font-size: 50px;
+}
+
+.testimonial__description {
+
+    padding-left: 64px;
+}
+
+.test__ratings {
+
+    color: #fabf2a;
+    margin-bottom: 16px;
+}
+
+.deepblue {
+    font-size: 20px;
+    font-weight: 700;
+    color: #243e63;
+}
+
+.praise {
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #4A5568;
+    margin: 16px 0 32px;
+}
+
+/* ----------------------------------------CLIENTS AREA ---------------------------------------------*/
