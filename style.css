@@ -650,7 +650,7 @@ p {
 
     margin: 0 auto;
     max-width: 1480px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 
@@ -1182,7 +1182,7 @@ info__button5:hover {
 
 .pricing__container {
     padding: 96px 0;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .pricing__row {
@@ -1462,19 +1462,25 @@ info__button5:hover {
 
 /* ----------------------------------------CLIENTS AREA ---------------------------------------------*/
 
-.eighthrow {
-    display: flex;
-}
 
-.balloon {
-    display: flex;
-    align-items: center;
-    width: 40%;
-}
 
 .clients__box {
-    padding: 96px;
+    display: flex;
+    align-items: center;
+    max-width: 60%;
+    align-content: center;
+    justify-content: center;
 }
+
+.eigthrow {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
 
 .test__subs {
 
@@ -1482,8 +1488,8 @@ info__button5:hover {
 }
 
 .testimonial__description {
-
     padding-left: 64px;
+    width: 50%;
 }
 
 .test__ratings {
@@ -1499,12 +1505,39 @@ info__button5:hover {
 }
 
 .praise {
-
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
     color: #4A5568;
     margin: 16px 0 32px;
+}
+
+
+.charlotte {
+    height: 85px;
+    max-width: 85px;
+    border-radius: 50px;
+}
+
+.personinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.persona {
+    font-size: 20px;
+    font-weight: 700;
+    color: #243e63;
+}
+
+.persona2 {
+
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #7c8ba1;
+
 }
 
 /* ----------------------------------------CLIENTS AREA ---------------------------------------------*/
