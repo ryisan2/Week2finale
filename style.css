@@ -1470,16 +1470,25 @@ info__button5:hover {
     max-width: 60%;
     align-content: center;
     justify-content: center;
+    margin: 0 auto;
+}
+
+.love {
+    display: flex;
+    align-content: center;
 }
 
 .eigthrow {
     display: flex;
-    align-content: center;
     justify-content: center;
+    align-items: center;
 }
 
 
-
+.testimonial__description {
+    display: flex;
+    flex-direction: column;
+}
 
 
 .test__subs {
@@ -1488,8 +1497,12 @@ info__button5:hover {
 }
 
 .testimonial__description {
-    padding-left: 64px;
+    margin-top: 120px;
+    display: flex;
+    align-content: center;
     width: 50%;
+    /* Or as per your design */
+    padding-left: 64px;
 }
 
 .test__ratings {
@@ -1512,11 +1525,18 @@ info__button5:hover {
     margin: 16px 0 32px;
 }
 
+.giveratings {
 
-.charlotte {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 20px;
+}
+
+.charlotte__img {
     height: 85px;
     max-width: 85px;
-    border-radius: 50px;
+    border-radius: 50% !important;
 }
 
 .personinfo {
@@ -1528,6 +1548,7 @@ info__button5:hover {
     font-size: 20px;
     font-weight: 700;
     color: #243e63;
+    margin: 0;
 }
 
 .persona2 {
@@ -1537,7 +1558,93 @@ info__button5:hover {
     font-weight: 500;
     line-height: 1.5;
     color: #7c8ba1;
+    margin: 0;
 
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.navinfo {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navigation-arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    /* Space between buttons and the divider */
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Make the buttons round */
+    border: none;
+    /* Remove default border */
+    font-size: 24px;
+    /* Adjust the size of the arrow symbol */
+    cursor: pointer;
+    background-color: rgb(137, 228, 232);
+    /* Add additional styling as needed */
+}
+
+/* Divider */
+.navigation-arrows::content {
+    content: '|';
+    font-size: 24px;
+    display: inline-block;
+    color: #000;
+    /* Change as needed */
+}
+
+.review {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-shrink: 0;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.5s ease;
+    /* Smooth transition for the opacity */
+
+}
+
+.review.active {
+    opacity: 1;
+}
+
+.reviewed {
+    display: flex;
+    justify-content: space-between;
+    /* This will place giveratings and arrows on opposite ends */
+    align-items: center;
+    /* This will vertically align giveratings and arrows */
+    width: 100%;
+    /* Match the width of the carousel */
+    position: absolute;
+    /* Position it at the bottom */
+    bottom: 0;
+    /* Position it at the bottom */
 }
 
 /* ----------------------------------------CLIENTS AREA ---------------------------------------------*/
