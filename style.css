@@ -1467,9 +1467,8 @@ info__button5:hover {
 .clients__box {
     display: flex;
     align-items: center;
-    max-width: 60%;
-    align-content: center;
     justify-content: center;
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -1478,17 +1477,12 @@ info__button5:hover {
     align-content: center;
 }
 
-.eigthrow {
+.eighthrow {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.testimonial__description {
-    display: flex;
-    flex-direction: column;
-}
 
 
 .test__subs {
@@ -1497,12 +1491,17 @@ info__button5:hover {
 }
 
 .testimonial__description {
-    margin-top: 120px;
+    margin-top: 150px;
     display: flex;
-    align-content: center;
-    width: 50%;
-    /* Or as per your design */
-    padding-left: 64px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%; /* Adjust width as necessary */
+    padding-left: 64px
+}
+.carousel-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .test__ratings {
@@ -1536,7 +1535,7 @@ info__button5:hover {
 .charlotte__img {
     height: 85px;
     max-width: 85px;
-    border-radius: 50% !important;
+    border-radius: 50%;
 }
 
 .personinfo {
@@ -1622,10 +1621,6 @@ info__button5:hover {
     left: 0;
     width: 100%;
     flex-shrink: 0;
-    opacity: 0;
-    /* Initially hidden */
-    transition: opacity 0.5s ease;
-    /* Smooth transition for the opacity */
 
 }
 
