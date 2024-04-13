@@ -1096,11 +1096,13 @@ header {
 
 .slidehow__buttons
  {
+  position: absolute;
   display: flex;
   align-content: center;
 }
 
 .slideshow__customer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
