@@ -77,3 +77,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all the elements with class 'question'
+    var questions = document.querySelectorAll('.question');
+
+    // Iterate through each question
+    questions.forEach(function(question) {
+        // Add a click event listener to each question
+        question.addEventListener('click', function() {
+            // This will toggle the 'active' class on the answer div
+            var answer = this.nextElementSibling;
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            
+            // This will toggle the rotate class on the SVG icon
+            var icon = this.nextElementSibling.nextElementSibling;
+            icon.classList.toggle('rotate');
+        });
+    });
+});
+
+function openMenu() {
+    document.body.classList += " menu--open"
+  }
+  
+  function closeMenu() {
+    document.body.classList.remove('menu--open')
+  }
