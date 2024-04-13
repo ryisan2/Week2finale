@@ -1089,12 +1089,15 @@ header {
   flex-direction: column;
   margin-left: 24px;
 }
-
-.slidehow__buttons,
 .break {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-content: center;
+}
+
+.slidehow__buttons
+ {
+  display: flex;
+  align-content: center;
 }
 
 .slideshow__customer {
@@ -1496,6 +1499,3 @@ header {
     flex-wrap: wrap;
   }
   /* -----------------------------------SMALL PHONES, TABLETS, LARGE SMARTPHONES -----------------------------------*/
-
-
- 
